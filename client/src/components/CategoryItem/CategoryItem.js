@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./CategoryItem.css";
+import './CategoryItem.css';
 
 export const CategoryItem = ({ title, handleClick }) => (
   <button onClick={handleClick} className="category-list-item">
