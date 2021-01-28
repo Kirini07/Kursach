@@ -1,5 +1,5 @@
 const {check} = require('express-validator');
 const GetByCategoryName = () => ([
-    check('categoryName', 'Вкажіть назву позиції!').exists().isString()
+    check('categoryName', 'Enter name of position!').exists().isString()
 ]);
 module.exports = GetByCategoryName;

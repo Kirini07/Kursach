@@ -11,7 +11,7 @@ const login = async (req, res) => {
     try {
         const errors = validationResult(req);
 
-        if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array(), message: 'Некоректна інформація!'  });
+        if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array(), message: 'Incorrect information!'  });
 
         const { email, password } = req.body;
         const candidate = await query(getLogin, [email]);
@@ -20,7 +20,7 @@ const login = async (req, res) => {
 
         const passExpect = await bcrypt.compare(password, candidate.rows[0].password);
 
-        if(!passExpect) return  res.status(400).json({ message: 'Некоректна інформація!' });
+        if(!passExpect) return  res.status(400).json({ message: 'Incorrect information!' });
 
         const token = jwt.sign(
             { userId: candidate.rows[0].pk_employees_id, role: 'employee' },

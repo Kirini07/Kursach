@@ -1,7 +1,7 @@
 const {check} = require('express-validator');
 const LoginValidate = () => ([
-    check('email', 'Некорректний email').isEmail(),
-    check('password', 'Мінімальна довжина пароля 10 символів')
+    check('email', 'Incorrect email').isEmail(),
+    check('password', 'The minimum password length is 10 characters')
         .isLength({ min: 10 })
 ]);
 

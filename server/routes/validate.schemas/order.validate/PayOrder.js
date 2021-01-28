@@ -1,6 +1,6 @@
 const {check} = require('express-validator');
 const PayOrderValidate = () => ([
-    check('orderId', 'Вкажіть номер замовлення!').exists(),
+    check('orderId', 'Enter the place number!').exists(),
 ]);
 
 module.exports = PayOrderValidate;

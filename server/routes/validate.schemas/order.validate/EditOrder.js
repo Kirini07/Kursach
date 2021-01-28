@@ -1,8 +1,8 @@
 const {check} = require('express-validator');
 const EditOrderValidate = () => ([
-    check('orderId', 'Вкажіть номер замовлення!').exists().isNumeric(),
-    check('list', 'Некоректне замовлення!').exists().isArray(),
-    check('price', 'Некоректна ціна!').exists().isNumeric(),
+    check('orderId', 'Enter number of order!').exists().isNumeric(),
+    check('list', 'Incorrect order list!').exists().isArray(),
+    check('price', 'Incorrect order price!').exists().isNumeric(),
 ]);
 
 module.exports = EditOrderValidate;

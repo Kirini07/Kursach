@@ -1,9 +1,9 @@
 const {check} = require('express-validator');
 const RegisterValidate = () => ([
-    check('firstName', 'Некорректне імя').exists(),
-    check('lastName', 'Некорректна фамілія').exists(),
-    check('email', 'Некорректний email').isEmail(),
-    check('password', 'Мінімальна довжина пароля 10 символів')
+    check('firstName', 'Incorrect first name, this field is require').exists(),
+    check('lastName', 'Incorrect last name, this field is require').exists(),
+    check('email', 'Incorrect email').isEmail(),
+    check('password', 'The minimum password length is 10 characters')
         .isLength({ min: 10 })
 ])
 

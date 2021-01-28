@@ -7,14 +7,14 @@ const payOrder = async (req, res) => {
     try {
         const errors = validationResult(req);
 
-        if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array(), message: 'Некоректна інформація!'  });
+        if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array(), message: 'Incorrect information!'  });
 
         const { orderId } = req.body;
 
         query(PayOrderById, [orderId])
-            .then(order => res.status(200).json({ message: 'Замовлення оплачене!', order }));
+            .then(order => res.status(200).json({ message: 'The order is paid!', order }));
     }catch (e) {
-        res.status(400).json({ message: 'Щось пішло не так, будь-ласка спробуйте ще раз' });
+        res.status(400).json({ message: 'Something went wrong, please try again' });
     }
 };
 module.exports = payOrder;
