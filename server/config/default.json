@@ -1,0 +1,19 @@
+{
+  "port": 5005,
+  "jwtSecret": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  "baseUrl": "http://localhost:5005",
+  "pgConfigProd": {
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "realman007",
+    "database": "Restoran"
+  },
+  "pgConfigDev": {
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": "realman007",
+    "database": "RestoranTest"
+  }
+}
