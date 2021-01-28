@@ -1,11 +1,11 @@
-const { Router } = require('express')
-const auth = require('../../../middlewars/auth.middlewar')
+const { Router } = require('express');
+const auth = require('../../../middlewars/auth.middlewar');
 
-const GetAllController = require('../../../controlers/common.controller/course.controllers/GetAll.controller')
-const GetCategoryNames = require('../../../controlers/common.controller/course.controllers/GetCategoryNames.controller')
-const GetByCategoryNames = require('../../../controlers/common.controller/course.controllers/GetByCategoryName.controller')
+const GetAllController = require('../../../controlers/common.controller/course.controllers/GetAll.controller');
+const GetCategoryNames = require('../../../controlers/common.controller/course.controllers/GetCategoryNames.controller');
+const GetByCategoryNames = require('../../../controlers/common.controller/course.controllers/GetByCategoryName.controller');
 
-const GetByCategoryNamesValidate = require('../../validate.schemas/course.validate/GetByCategoryName')
+const GetByCategoryNamesValidate = require('../../validate.schemas/course.validate/GetByCategoryName');
 
 const router = Router();
 

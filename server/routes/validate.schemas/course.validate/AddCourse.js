@@ -1,4 +1,4 @@
-const {check} = require('express-validator')
+const {check} = require('express-validator');
 const AddCourse = () => ([
     check('title', 'Вкажіть назву позиції!').exists().isString(),
     check('composition', 'Некоректне склад!').exists().isArray(),
@@ -8,4 +8,4 @@ const AddCourse = () => ([
     check('img_path', 'Вкажіть URL!').exists()
 ]);
 
-module.exports = AddCourse
+module.exports = AddCourse;

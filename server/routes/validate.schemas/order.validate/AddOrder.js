@@ -1,4 +1,4 @@
-const {check} = require('express-validator')
+const {check} = require('express-validator');
 const AddOrderValidate = () => ([
     check('id', 'Вкажіть id замовлення').exists(),
     check('placeN', 'Вкажіть номер столу!').exists().isNumeric(),
@@ -8,4 +8,4 @@ const AddOrderValidate = () => ([
     check('waiter', 'Вкажіть офіціанта!').exists().isNumeric()
 ]);
 
- module.exports = AddOrderValidate
+ module.exports = AddOrderValidate;

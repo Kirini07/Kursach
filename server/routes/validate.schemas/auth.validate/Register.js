@@ -1,4 +1,4 @@
-const {check} = require('express-validator')
+const {check} = require('express-validator');
 const RegisterValidate = () => ([
     check('firstName', 'Некорректне імя').exists(),
     check('lastName', 'Некорректна фамілія').exists(),

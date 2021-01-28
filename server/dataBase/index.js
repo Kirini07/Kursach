@@ -1,14 +1,14 @@
-const { Pool } = require('pg')
-const config = require('config')
+const { Pool } = require('pg');
+const config = require('config');
 
 let pool;
 
 if(process.env.NODE_ENV === 'test'){
-    pool = new Pool(config.get('pgConfigDev'))
+    pool = new Pool(config.get('pgConfigDev'));
 
 }else{
     pool = new Pool(config.get('pgConfigProd'))
-}
+};
 
 
 module.exports = {
@@ -18,8 +18,8 @@ module.exports = {
     getClient: (callback) => {
         pool.connect((err, client, done) => {
             callback(err, client, done)
-        })
+        });
     },
     close: () => pool.end()
-}
+};
 
