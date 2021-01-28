@@ -24,7 +24,7 @@ describe('/Api Errors',
                     "firstName": "test",
                     "lastName": "test",
                     "email": "sergsugi@mail.ru",
-                    "password": "testtest"
+                    "password": "testtesttesttes"
                 }
                 it('/Response should be contain fields "message" ',
                     done => {
@@ -98,14 +98,14 @@ describe('/Api Errors',
                             } )
                             .catch(err => done(err));
                 });
-                it('Secon field on errors should to be equal "Мінімальна довжина пароля 6 символів"',
+                it('Secon field on errors should to be equal "Мінімальна довжина пароля 10 символів"',
                     done => {
                         request(app)
                             .post('/auth/register')
                             .send(testData)
                             .then( res => {
                                 const body = res.body
-                                expect(body.errors[1].msg).to.equal('Мінімальна довжина пароля 6 символів')
+                                expect(body.errors[1].msg).to.equal('Мінімальна довжина пароля 10 символів')
                                 done()
                             })
                             .catch(err => done(err));
