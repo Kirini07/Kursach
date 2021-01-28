@@ -1,0 +1,77 @@
+.item-container{
+    padding: 10px;
+    background: #FCFCFC;
+    border: 1px solid #D5D5D5;
+}
+.item-container .item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #F6DCCD;
+    text-align: center;
+    background: #93628F;
+    height: 100%;
+    border: 1px solid #D5D5D5;
+}
+
+.item-container .item-content .item-img{
+    width: 100%;
+    height: 240px;
+}
+.item-container .item-content .item-title{
+    padding: 5px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+.item-container .item-content .item-description{
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Patrick Hand', cursive;
+}
+.item-container .item-content .item-fields {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing:3px ;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    margin:0;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.item-container .item-content .item-fields .no-style-field {
+    letter-spacing: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+.item-container .item-content .item-btn{
+    display: flex;
+    padding: 5px;
+    margin: 5px auto;
+    width: 60%;
+    justify-content: space-around;
+}
+.item-container .item-content .item-btn .btn {
+    padding: 5px 10px;
+    background: inherit;
+    cursor: pointer;
+}
+.item-container .item-content .item-btn .add{
+    border: 2px solid #F6DCCD;
+    font-size: 18px;
+    color: #F6DCCD;
+    transition: .4s;
+}
+.item-container .item-content .item-btn .add:focus{
+    outline: none;
+    background-color: #F6DCCD;
+    color: #A35F9D;
+}
+.item-container .item-content .item-btn .count {
+    bottom: 0;
+    width: 40px;
+    opacity: .7;
+}
+.item-container .item-content .item-btn .count:focus{
+    outline-color: #F6DCCD;
+    opacity: 1;
+}

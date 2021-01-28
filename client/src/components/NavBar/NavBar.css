@@ -1,0 +1,49 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav-bar {
+  width: 100%;
+  padding: 8px 0;
+  margin-bottom: 15px;
+  color: #EAEAEA;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #4B294A;
+}
+.nav-bar .link-list {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+.nav-bar .link-list .link {
+  display: inline-block;
+  padding: 10px;
+}
+.nav-bar .link-list .log-out-btn{
+  background-color: inherit;
+  cursor: pointer;
+  color: #BF64C4;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 700;
+  transition: .3s;
+}
+.nav-bar .link-list .log-out-btn span{
+  font-size: 30px;
+}
+.nav-bar .link-list .log-out-btn:focus,
+.nav-bar .link-list .log-out-btn:active{
+  outline: none;
+  background-color: #BF64C4;
+  color: #4B294A;
+}

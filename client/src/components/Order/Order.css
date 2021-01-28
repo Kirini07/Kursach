@@ -1,0 +1,44 @@
+.order-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #93628F;
+    padding: 20px 10px;
+    max-width: 500px;
+}
+.order-container .order-title {
+    font-family: 'Parisienne', cursive;
+    font-size: 45px;
+    color: #F3E7D7;
+}
+.order-header-info{
+    margin: 15px auto;
+    font-size: 18px;
+    color: #F3E7D7;
+    font-family: 'Patrick Hand', cursive;
+}
+.add-course-from-order-btn{
+    background-color: #4B2849;
+    padding: 10px;
+    border: 2px solid #F3E7D7;
+    color: #F3E7D7;
+    margin-bottom: 15px;
+    transition: .4s;
+    cursor: pointer;
+}
+.add-course-from-order-btn:focus, .add-course-from-order-btn:active{
+    outline: none;
+    background-color: #F3E7D7;
+    color: #4B2849;
+}
+.order-price{
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: monospace;
+    color: #F3E7D7;
+}
+.order-btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}

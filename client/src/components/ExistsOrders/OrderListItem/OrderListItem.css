@@ -1,0 +1,37 @@
+.order-list-item{
+    padding: 15px 0;
+    color: #222222;
+    background: #F3E7D7;
+    text-align: center;
+    height: 100%;
+    font-family: 'Parisienne', cursive;
+}
+.order-list-item__place{
+    display: inline-block;
+    color: #222222;
+}
+.order-list-item__btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 10px;
+    color: #F3E7D7;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #222222;
+    background: #222222;
+    transition: .2s;
+}
+.order-list-item__btn:active{
+    outline: none;
+    background: #F3E7D7;
+    color: #222222;
+}
+.order-list-item__btn:focus{
+    outline: none;
+}
+.order-item-buttons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 70%;
+}
