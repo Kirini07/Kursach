@@ -1,4 +1,4 @@
-const {Router} = require('express');
+const { Router } = require('express');
 
 const AddCourse = require('../../../controlers/admin.controller/course.controllers/Add.course.controller');
 const DeleteCourse = require('../../../controlers/admin.controller/course.controllers/Delete.course.controller');

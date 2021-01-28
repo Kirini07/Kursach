@@ -9,19 +9,8 @@ const GetByCategoryNamesValidate = require('../../validate.schemas/course.valida
 
 const router = Router();
 
-router.get('/all',
-    auth,
-    GetAllController
-);
-router.get('/category',
-    auth,
-    GetCategoryNames
-);
-router.post('/byCategory',
-    GetByCategoryNamesValidate(),
-    auth,
-    GetByCategoryNames
-);
-
+router.get('/all', auth, GetAllController);
+router.get('/category', auth, GetCategoryNames);
+router.post('/byCategory', GetByCategoryNamesValidate(), auth, GetByCategoryNames);
 
 module.exports = router;
